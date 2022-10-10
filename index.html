@@ -48,15 +48,24 @@
     <!-- Search Section -->
     <search class="search">
         Location:
-        <input type="text" placeholder="Search..">
+        <input type="text" id="input" placeholder="Search..">
+        <button class="button">Find</button>
     </search>
 
      <!-- Top Container -->
      <section class="top-container">
         <header class="showcase">
-            <h1 id="location">Helsinki</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Quae beatae laboriosam quod, id similique minus.</p>
+            <h1 id="location"></h1>
+            <info class="info">
+                <div class="left">
+                    <p class="infobox" id="country">A</p>
+                    <p class="infobox" id="description">B</p>
+                </div>
+                <div class="right">
+                    <p class="infobox" id="wind">C</p>
+                    <p class="infobox" id="humidy">D</p>
+                </div>
+            </info>
         </header>
         <div class="top-box top-box-a">
             <h4>Temperature</h4>
