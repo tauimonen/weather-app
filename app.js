@@ -27,8 +27,11 @@ function readData(location) {
     const t = data.main.temp;
     displayTemp(t);
 
-    const country = data.weather[0].description;
-    displayDescription()
+    const country = data.sys.country;
+    displayCountry(country);
+
+    const description = data.weather[0].description;
+    displayDescription(description);
 
 
   });
@@ -47,6 +50,10 @@ const displayLocation = (loc) => {
 
 const displayDescription = (des) => {
     description.innerHTML = des;
+}
+
+const displayCountry = cntry => {
+    country.innerHTML = cntry;
 }
 
 
